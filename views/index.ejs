@@ -1,0 +1,50 @@
+<%- include ("partials/header.ejs") %>
+
+  <body>
+    
+    <div class="container">
+      <form action="/submit" method="POST">
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1" 
+            >Username</span
+          >
+          <input
+            type="text"
+            class="form-control"
+            placeholder="@Username"
+            name="username"
+            aria-label="Username"
+            aria-describedby="basic-addon1"
+          />
+        </div>
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon2" "
+            >Topic</span
+          >
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Which topic will you talk about?"
+            name="topic"
+            aria-label="Topic"
+            aria-describedby="basic-addon2"
+          />
+        </div>
+
+        <div class="input-group">
+           
+          <textarea
+            class="form-control textarea"
+            aria-label="With textarea"
+            name="textarea"
+          ></textarea>
+        </div>
+
+        <button class="custom-btn btn-12">
+          <span>Click!</span><span>Submit Blog</span>
+        </button>
+      </form>
+    </div>
+</body>
+</html>
+<%- include ("partials/footer.ejs") %>
